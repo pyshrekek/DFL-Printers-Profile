@@ -39,7 +39,7 @@ profiles/
 pushes. It validates the version, refuses a duplicate tag, and the tag's version always equals the
 `.ini` `config_version` by construction.
 
-### ⚠️ The one rule: the git tag and `config_version` MUST match
+### The git tag and `config_version` MUST match
 
 The updater reads the **offered** version from the **tag name** (`<config_version>=<min_slicer_version>`)
 but the **installed** version from `config_version` **inside the downloaded `.ini`**. If they drift —
